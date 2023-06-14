@@ -50,28 +50,7 @@
 
 **Note: If the installation path and application name are the same, it will lead to conflict ([#142](https://github.com/lencx/ChatGPT/issues/142))**
 
-### Mac
 
-- [ChatGPT_1.0.0_macos_aarch64.dmg](https://github.com/lencx/ChatGPT/releases/download/v1.0.0/ChatGPT_1.0.0_macos_aarch64.dmg): Direct download installer
-- [ChatGPT_1.0.0_macos_x86_64.dmg](https://github.com/lencx/ChatGPT/releases/download/v1.0.0/ChatGPT_1.0.0_macos_x86_64.dmg): Direct download installer
-- Homebrew \
-  Or you can install with _[Homebrew](https://brew.sh) ([Cask](https://docs.brew.sh/Cask-Cookbook)):_
-  ```sh
-  brew tap lencx/chatgpt https://github.com/lencx/ChatGPT.git
-  brew install --cask chatgpt --no-quarantine
-  ```
-  Also, if you keep a _[Brewfile](https://github.com/Homebrew/homebrew-bundle#usage)_, you can add something like this:
-  ```rb
-  repo = "lencx/chatgpt"
-  tap repo, "https://github.com/#{repo}.git"
-  cask "chatgpt", args: { "no-quarantine": true }
-  ```
-
-**If you encounter the error message `"ChatGPT" is damaged and can't be opened. You should move it to the Trash`. while installing software on macOS, it may be due to security settings restrictions in macOS. To solve this problem, please try the following command in Terminal:**
-
-```bash
-sudo xattr -r -d com.apple.quarantine /YOUR_PATH/ChatGPT.app
-```
 
 ### Linux
 
